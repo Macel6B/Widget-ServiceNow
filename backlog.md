@@ -1,7 +1,7 @@
 # Product Backlog - DevGrowth Tracker
 
 **Last Updated:** October 31, 2024  
-**Product Owner:** [Your Name]
+**Product Owner:** Macel 6B
 
 ---
 
