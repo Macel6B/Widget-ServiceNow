@@ -1,0 +1,71 @@
+<div class="devgrowth-tracker">
+<!-- Header -->
+<div class="tracker-header">
+    <h2>DevGrowth Tracker</h2>
+    <p class="subtitle">Track your daily learning journey</p>
+</div>
+
+<!-- Learning Entry Form -->
+<div class="entry-form panel panel-default">
+    <div class="panel-heading">
+    <h3 class="panel-title">Add Today's Learning</h3>
+    </div>
+    <div class="panel-body">
+    <form name="learningForm" ng-submit="c.addEntry()">
+        
+        <!-- Title Field -->
+        <div class="form-group">
+        <label for="entryTitle">
+            What did you learn? <span class="text-danger">*</span>
+        </label>
+        <input 
+            type="text" 
+            class="form-control" 
+            id="entryTitle"
+            ng-model="c.newEntry.title"
+            placeholder="e.g., AngularJS Two-Way Binding"
+            required
+            maxlength="100">
+        </div>
+
+        <!-- Description Field -->
+        <div class="form-group">
+        <label for="entryDescription">
+            Describe what you learned <span class="text-danger">*</span>
+        </label>
+        <textarea 
+            class="form-control" 
+            id="entryDescription"
+            ng-model="c.newEntry.description"
+            placeholder="Explain the concept, how you used it, or what clicked for you..."
+            rows="4"
+            required
+            maxlength="500"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+        <button 
+            type="submit" 
+            class="btn btn-primary"
+            ng-disabled="learningForm.$invalid">
+            <i class="fa fa-plus"></i> Add Entry
+        </button>
+        </div>
+
+    </form>
+    </div>
+</div>
+
+<!-- Entries Display (placeholder for now) -->
+<div class="entries-list" ng-if="c.entries.length > 0">
+    <h3>Recent Learnings</h3>
+    <p>Entries will display here...</p>
+</div>
+
+<!-- Empty State -->
+<div class="empty-state" ng-if="c.entries.length === 0">
+    <p class="text-muted">No entries yet. Add your first learning above!</p>
+</div>
+
+</div>
