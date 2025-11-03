@@ -1,5 +1,6 @@
 # Daily Development Log
 
+
 ## Sprint 1 - Week 1
 
 ---
@@ -32,15 +33,23 @@
 ---
 
 ### Day 2 - [Date]
-**Time:** ___ minutes  
-**User Story:** US-001  
-**Branch:** feature/US-001-basic-widget
+**Time:** 45 minutes  
+**User Story:** US-001 & US-002  
+**Branch:** develop
 
 #### What I Did
-- 
+- Create html structure
+- Implement basic AngularJS controller
+- Added form validation in required fields
+- Styled the form with Bootstrap classes
+- Test form input and clearing functionality
 
 #### Topics practiced (OOP/Technical)
-- 
+- AngularJS ng-model: Two way data binding between a view and controller
+- AngularJS ng-submit: Form submission handling
+- Encapsulation: Grouping related functionality in methods
+- Data model: Establishing object structure for entries
+- Constructor pattern: Using init function for setup
 
 #### Blockers
 - 
@@ -49,6 +58,8 @@
 - 
 
 #### Tomorrow's Focus
-- 
+- Create LearningEntry constructor function (Proper OOP class)
+- Display entries below the form
+- Add entry metadata (date, ID)
 
 ---
